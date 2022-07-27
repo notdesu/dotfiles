@@ -1,0 +1,62 @@
+window:
+  padding:
+    x: 15
+    y: 15
+  class: 
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 5000
+  multiplier: 3
+
+font:
+  normal:
+    family: mononoki Nerd Font Mono
+    style: Regular
+  italic:
+    family: mononoki Nerd Font Mono
+    style: Italic
+  bold:
+    family: mononoki Nerd Font Mono
+    style: Bold
+  bold_italic:
+    family: mononoki Nerd Font Mono
+    style: BoldItalic
+  size: 10	
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '0x2D2A2E'
+    foreground: '0xfff1f3'
+  normal:
+    black: '0x2c2525'
+    red: '0xfd6883'
+    green: '0xadda78'
+    yellow: '0xf9cc6c'
+    blue: '0xf38d70'
+    magenta: '0xa8a9eb'
+    cyan: '0x85dacc'
+    white: '0xfff1f3'
+  bright:
+    black: '0x72696a'
+    red: '0xfd6883'
+    green: '0xadda78'
+    yellow: '0xf9cc6c'
+    blue: '0xf38d70'
+    magenta: '0xa8a9eb'
+    cyan: '0x85dacc'
+    white: '0xfff1f3'
+
+live_config_reload: true
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
