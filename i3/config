@@ -214,7 +214,7 @@ assign [class="firefox"] $ws2
 assign [class="jetbrains-pycharm-ce"] $ws3
 
 # Media keys
-bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioStop exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
@@ -244,6 +244,9 @@ exec_always feh --bg-scale /home/notdesu/Pictures/l998udpehpw81.png
 
 # i3lock
 bindsym $mod+x exec --no-startup-id scrot --silent /tmp/screen.png && convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png && [[ -f $HOME/Pictures/lock_icon.png ]] && convert /tmp/screen.png $HOME/Pictures/lock_icon.png -gravity center -composite -matte /tmp/screen.png && i3lock -u -i /tmp/screen.png && rm /tmp/screen.png
+
+# deepin-screenshot bind
+bindsym $mod+Print exec --no-startup-id deepin-screenshot
 
 # picom and polybar start
 exec --no-startup-id picom --experimental-backends -b
